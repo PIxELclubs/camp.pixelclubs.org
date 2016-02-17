@@ -1,0 +1,247 @@
+body {
+    color: #08b4bc;
+    background-color: #00f3ff;
+}
+
+.row.head {
+    padding-top: 20%;
+    height: 80vh;
+    /*position: absolute;
+    z-index: 3;*/
+}
+
+.row.head > div > * {
+    position: relative;
+    z-index: 3;
+}
+
+.clouds {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin: 0 0 0 0 !important;
+    height: 100vh;
+    background-image: url('/img/clouds_trans.png');
+    background-position: 0px;
+    background-repeat: repeat-x;
+    -webkit-animation: clouds 20s infinite linear;
+    -moz-animation: clouds 20s infinite linear;
+    -o-animation: clouds 20s infinite linear;
+    animation: clouds 20s infinite linear;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14pt;
+    line-height: 1.2;
+}
+
+.row.red p, .row.yellow p {
+    margin-top: 20px;
+}
+
+a.btn-primary.apply {
+    background-color: #08b4bc;
+    font-size: 18pt;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+a.btn-primary.apply-bottom {
+    background-color: #08b4bc;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 100;
+}
+
+#date {
+    display: inline-block;
+    margin-top: -30px;
+}
+
+#tag {
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+#sun {
+    position: absolute;
+    z-index: 0;
+    right: 20%;
+    top: 20%;
+}
+
+.row.yellow {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #ecff45;
+    color: #fbaf5d;
+}
+
+.row.yellow h1 {
+    color: #fbaf5d;
+}
+
+.row.subyellow {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: -moz-linear-gradient( -45deg, #ecff45 0%, rgb(255,196,113) 100%);
+    background-image: -webkit-linear-gradient( -45deg, #ecff45 0%, rgb(255,196,113) 100%); 
+    background-image: -ms-linear-gradient( -45deg, #ecff45 0%, rgb(255,196,113) 100%);
+}
+
+.row.subyellow #bigred {
+    color: #e92067;
+    font-size: 36pt;
+}
+
+.row.subyellow > div img.img-responsive {
+    width: 494px;
+    margin-top: 5%;
+}
+
+.row.red {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #e92067;
+    color: #ffffff;
+}
+
+.row.red h1 {
+    color: #ffffff;
+}
+
+.row.subred {
+    background-color: #ffffff;
+    color: #e92067;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.row.subred p {
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+
+#racing-stripe {
+    color: #e92067;
+    background-color: #e92067;
+    height: 5px;
+}
+
+.row.orange {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* background-color: #f7941d; */
+    /* background-color: #ffba36; */
+    background-color: #eba314;
+    /* background-color: #000; */
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.row.orange p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.row.orange h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #00f3ff;
+}
+
+.row.orange h2 {
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ecff45;
+    font-weight: 100;
+}
+
+.row.orange .btn {
+    width: 50%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+@-webkit-keyframes clouds {
+    0%   { background-position: 0px; }
+    100% { background-position: 1000px; }
+}
+@-moz-keyframes clouds {
+    0%   { background-position: 0px; }
+    100% { background-position: 1000px; }
+}
+@-o-keyframes clouds {
+    0%   { background-position: 0px; }
+    100% { background-position: 1000px; }
+}
+@keyframes clouds {
+    0%   { background-position: 0px; }
+    100% { background-position: 1000px; }
+}
+
+/** DEVICE SPECIFICS **/
+@media(max-width:767px){
+    .row.head {
+        height: 100%;
+        padding-bottom: 5%;
+    }
+    .row.yellow > div img.img-responsive {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row.subyellow > div img.img-responsive {
+        max-width: 60%;
+    }
+
+    .row.orange .btn {
+        width: 75%; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+}
+
+@media(min-width:768px){
+    .row.yellow > div img.img-responsive {
+        max-width: 400px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+@media(min-width:992px){
+    #tag {
+        margin-top: 5%;
+    }
+}
+
+@media(min-width:1200px){
+    #tag {
+        margin-top: 10%;
+    }
+    .row.red h1, .row.yellow h1 {
+        font-size: 40pt;
+    }
+    .row.yellow > div img.img-responsive {
+        margin-top: 5%;
+        width: 339px;
+    }
+}
